@@ -18,18 +18,32 @@ class Main {
 
     System.out.println("ingrese el segundo numero: ");
     numero2 = entrada2.nextInt();
+
+    //tercer numero
+    Scanner entrada3 = new Scanner(System.in);
+    int numero3;
+
+    System.out.println("ingrese el tercer numero: ");
+    numero3 = entrada3.nextInt();
+
+    if(numero1 > numero2 ){
+      if(numero1 > numero3){
+        System.out.println(numero1 + " es el mayor numero");
+      } 
+    }
+
+     if(numero2 > numero1 ){
+      if(numero2 > numero3){
+        System.out.println(numero2 + " es el mayor numero");
+      } 
+    }
    
+    if(numero3 > numero2 ){
+      if(numero3 > numero1){
+        System.out.println("("+numero3 +") es el mayor numero");
+      } 
+    }
 
-   System.out.println(numero1);
-   System.out.println(numero2);
-
-   if(numero1 == numero2){
-     System.out.println("los dos numeros son iguales");
-   } else {
-     System.out.println("los dos numeros son diferentes");
-   }
-
-
-
+  
   }
 }
